@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('/tutorial', function () {
     return view('tutorial');
 });
+
+
+Route::get('/user', function () {
+    return view('user.index');
+});
