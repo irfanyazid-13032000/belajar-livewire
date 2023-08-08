@@ -6,9 +6,18 @@ use Livewire\Component;
 
 class Belajar extends Component
 {
-    public $nama = 'yajed';
+    public $keranjang = 0;
     public function render()
     {
         return view('livewire.belajar');
+    }
+
+    public function plus()
+    {
+        $this->keranjang++;
+    }
+    public function minus()
+    {
+        $this->keranjang--;
     }
 }
