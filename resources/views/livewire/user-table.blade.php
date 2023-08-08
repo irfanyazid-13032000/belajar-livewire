@@ -9,12 +9,14 @@
             </tr>
         </thead>
         <tbody>
+            @foreach ($users as $user)
             <tr>
-                <td>1</td>
-                <td>yudi</td>
-                <td>yudi@gmail.com</td>
+                <td>{{$loop->iteration}}</td>
+                <td>{{$user->name}}</td>
+                <td>{{$user->email}}</td>
                 <td><button class="btn btn-success">hapus</button></td>
             </tr>
+            @endforeach
         </tbody>
     </table>
 </div>
